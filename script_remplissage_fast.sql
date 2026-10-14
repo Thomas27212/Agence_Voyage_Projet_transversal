@@ -32,17 +32,12 @@ INSERT INTO Circuit (descriptif, villeDepart, dateDepart, nbrplacesDisponible, d
 -- ==========================================
 -- 4. Insertion des Utilisateurs (Génération suivante)
 -- ==========================================
-INSERT INTO Utilisatreur (nom, prenom, mail, date_naissance) VALUES
-('Uzumaki', 'Boruto', 'boruto@konoha.mail', '2010-10-10'),
-('Uchiha', 'Sarada', 'sarada@konoha.mail', '2010-03-21'),
-('Nara', 'Shikadai', 'shikadai@konoha.mail', '2010-07-25');
+INSERT INTO Utilisatreur (nom, prenom, isadmin, mail, date_naissance) VALUES
+('Uzumaki', 'Boruto', True, 'boruto@konoha.mail', '2010-10-10'),
+('Uchiha', 'Sarada', False, 'sarada@konoha.mail', '2010-03-21'),
+('Nara', 'Shikadai', False, 'shikadai@konoha.mail', '2010-07-25');
 
--- ==========================================
--- 5. Insertion des Administrateurs
--- ==========================================
-INSERT INTO Admin (nom, password) VALUES
-('Hatake Kakashi', 'sharingan_6eme'),
-('Nara Shikamaru', 'chess_master_2026');
+
 
 -- ==========================================
 -- 6. Insertion des Clans
