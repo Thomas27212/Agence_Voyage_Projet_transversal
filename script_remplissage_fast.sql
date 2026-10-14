@@ -24,10 +24,10 @@ INSERT INTO Ville (nom, Id_Pays) VALUES
 -- ==========================================
 -- 3. Insertion des Circuits touristiques
 -- ==========================================
-INSERT INTO Circuit (descriptif, villeDepart, dateDepart, nbrplacesDisponible, duree, prixInscription) VALUES
-('Tour des 5 Grandes Nations Shinobi', 'Konohagakure', '2026-11-01', '20', '30 jours', '500000 Ryos'),
-('Pèlerinage au Pays du Feu', 'Konohagakure', '2026-10-20', '10', '7 jours', '150000 Ryos'),
-('Découverte du Pays du Vent', 'Sunagakure', '2026-12-05', '15', '10 jours', '200000 Ryos');
+INSERT INTO Circuit (descriptif, villeDepart, dateDepart, nbrplacesDisponible, duree,villeArrivee, dateArrivee, prixInscription) VALUES
+('Tour des 5 Grandes Nations Shinobi', 'Konohagakure', '2026-11-01', '20', '30 jours','Iwagakure','2026-11-31', '500000 Ryos'),
+('Pèlerinage au Pays du Feu', 'Konohagakure', '2026-10-20', '10', '7 jours','Kumogakure','2026-11-31', '150000 Ryos'),
+('Découverte du Pays du Vent', 'Sunagakure', '2026-12-05', '15', '10 jours','Kirigakure','2026-11-31', '200000 Ryos');
 
 -- ==========================================
 -- 4. Insertion des Utilisateurs (Génération suivante)
