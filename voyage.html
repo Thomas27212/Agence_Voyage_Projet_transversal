@@ -1,25 +1,293 @@
+
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Naruto Travel</title>
+
     <link rel="stylesheet" href="voyage.css">
+    <script src="java.js" defer></script>
 </head>
+
 <body>
 
+    <!-- =========================
+         HEADER
+    ========================== -->
+
     <header>
-        <h1>🍥 Naruto Travel</h1>
+
+        <h1>🍥 ナルトの旅路</h1>
 
         <nav>
             <a href="voyage.html">Accueil</a>
             <a href="pays.html">Pays</a>
             <a href="village.html">Villages</a>
-            <a href="clans.html">Clans</a>
-            <a href="destination.html">Destinations</a>
+            <a href="clan.html">Clans</a>
         </nav>
+
     </header>
-<main>
-    <h2>bienvenue dans le monde de Naruto</h2> 
 
 
+    <!-- =========================
+         BANNIERE
+    ========================== -->
+
+    <section class="banniere">
+
+        <div class="fond"></div>
+
+        <div class="contenu">
+            <h2>Pas besoin de Bryan pour voyager !</h2>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         RECHERCHE
+    ========================== -->
+
+    <main>
+
+        <section class="recherche">
+
+            <h2>🍥 Trouvez votre aventure ninja</h2>
+
+            <form id="formulaire-recherche">
+
+                <!-- PAYS -->
+
+                <div class="champ">
+
+                    <label for="pays">Quel pays ?</label>
+
+                    <select id="pays">
+                        <option value="">Tous les pays</option>
+                        <option value="feu">🔥 Pays du Feu</option>
+                        <option value="vent">🌪️ Pays du Vent</option>
+                        <option value="eau">💧 Pays de l'Eau</option>
+                        <option value="foudre">⚡ Pays de la Foudre</option>
+                        <option value="terre">⛰️ Pays de la Terre</option>
+                    </select>
+
+                </div>
+
+
+                <!-- VILLAGES -->
+
+                <div class="champ">
+
+                    <label for="village">Quel village ?</label>
+
+                    <select id="village">
+                        <option value="">Tous les villages</option>
+                    </select>
+
+                </div>
+
+
+                <!-- CLANS -->
+
+                <div class="champ">
+
+                    <label for="clan">Quel clan ?</label>
+
+                    <select id="clan">
+                        <option value="">Tous les clans</option>
+                    </select>
+
+                </div>
+
+
+                <!-- BOUTON -->
+
+                <button type="submit" class="bouton-recherche">
+                    🔍 Rechercher
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- =========================
+             RESULTATS
+        ========================== -->
+
+        <section class="resultats" id="resultats" hidden>
+
+            <h2>Votre destination ninja</h2>
+
+            <p id="texte-resultat"></p>
+
+        </section>
+
+
+        <!-- =========================
+             VILLAGES
+        ========================== -->
+
+        <section class="villages-carousel">
+
+            <div class="villages-intro">
+
+                <p>DESTINATIONS NINJAS</p>
+
+                <h2>Découvrez les villages légendaires</h2>
+
+                <p>Explorez les cinq grandes nations du monde de Naruto.</p>
+
+            </div>
+
+
+            <div class="carousel-zone">
+
+                <!-- FLECHE GAUCHE -->
+
+                <button class="fleche precedent" type="button">
+                    ❮
+                </button>
+
+
+                <div class="carousel-fenetre">
+
+                    <div class="carousel-piste" id="carousel-piste">
+
+
+                        <!-- KONOHA -->
+
+                        <div class="carte-village">
+
+                           <img src="konoha.jpg" alt="Konoha">
+
+                            <div class="carte-info">
+
+                                <h3>🍃 Konoha</h3>
+
+                                <p>Pays du Feu</p>
+
+                                <span>Village caché de la Feuille</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- SUNA -->
+
+                        <div class="carte-village">
+
+                            <img src="suna.jpg" alt="Suna">
+
+                            <div class="carte-info">
+
+                                <h3>🌪️ Suna</h3>
+
+                                <p>Pays du Vent</p>
+
+                                <span>Village caché du Sable</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- KIRI -->
+
+                        <div class="carte-village">
+
+                            <img src="kiri.jpg" alt="Kiri">
+
+                            <div class="carte-info">
+
+                                <h3>💧 Kiri</h3>
+
+                                <p>Pays de l'Eau</p>
+
+                                <span>Village caché de la Brume</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- KUMO -->
+
+                        <div class="carte-village">
+
+                            <img src="kumo.jpg" alt="Kumo">
+
+                            <div class="carte-info">
+
+                                <h3>⚡ Kumo</h3>
+
+                                <p>Pays de la Foudre</p>
+
+                                <span>Village caché des Nuages</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- IWA -->
+
+                        <div class="carte-village">
+
+                            <img src="iwa.jpg" alt="Iwa">
+
+                            <div class="carte-info">
+
+                                <h3>⛰️ Iwa</h3>
+
+                                <p>Pays de la Terre</p>
+
+                                <span>Village caché de la Roche</span>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- FLECHE DROITE -->
+
+                <button class="fleche suivant" type="button">
+                    ❯
+                </button>
+
+            </div>
+
+
+            <!-- COMPTEUR -->
+
+            <div class="carousel-indicateur">
+                <span id="numero-village">01 / 05</span>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>© 2026 Naruto Travel - Votre aventure ninja</p>
+
+    </footer>
+
+</body>
+
+</html>
