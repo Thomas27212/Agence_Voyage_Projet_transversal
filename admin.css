@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #03052f;
+    color: white;
+    margin: 0;
+}
+
+header {
+    background-color: #0C74EF;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #ffcc00;
+}
+
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.onglets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.onglets a {
+    background-color: #252951;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.onglets a.actif {
+    background-color: #FF9800;
+}
+
+h2 {
+    margin: 20px 0 15px;
+}
+
+.zone-table {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #095DC0;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #0C74EF;
+}
+
+th {
+    background-color: #0C74EF;
+}
+
+.actions a {
+    color: #ffcc00;
+    margin-right: 10px;
+}
+
+.actions a.supprimer {
+    color: #ff6b6b;
+}
+
+.message {
+    background-color: #b33a3a;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.formulaire-admin {
+    background-color: #095DC0;
+    padding: 25px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.champ-admin {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.champ-admin label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.champ-admin input,
+.champ-admin select {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.formulaire-admin button {
+    grid-column: 1 / -1;
+    background-color: #FF9800;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formulaire-admin button:hover {
+    background-color: #e68900;
+}
+
+.formulaire-admin a {
+    color: white;
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.boite-connexion {
+    max-width: 400px;
+    margin: 100px auto;
+    background-color: #095DC0;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.boite-connexion h1 {
+    margin: 0 0 10px;
+}
+
+.boite-connexion h2 {
+    margin: 0 0 20px;
+    font-size: 20px;
+}
+
+.boite-connexion form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.boite-connexion input {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.boite-connexion button {
+    background-color: #FF9800;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.boite-connexion a {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .formulaire-admin {
+        grid-template-columns: 1fr;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+}
